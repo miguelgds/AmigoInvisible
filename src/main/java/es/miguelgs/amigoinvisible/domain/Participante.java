@@ -6,7 +6,7 @@ import java.util.Collections;
 
 import es.miguelgs.amigoinvisible.domain.notificacion.Notificacion;
 
-public class Participante implements Regalador {
+public class Participante implements Regalador, Regalado {
 	private String nombre;
 	private Collection<String> noPuedeRegalarA;
 	private Notificacion notificador;
@@ -22,6 +22,7 @@ public class Participante implements Regalador {
 		this.noPuedeRegalarA = noPuedeRegalarA;
 	}
 	
+	@Override
 	public String nombre() {
 		return this.nombre;
 	}

@@ -1,10 +1,10 @@
 package es.miguelgs.amigoinvisible.domain;
 
 public class Emparejamiento {
-	private Participante regalador;
-	private Participante regalado;
+	private Regalador regalador;
+	private Regalado regalado;
 
-	public Emparejamiento(Participante regalador, Participante regalado) {
+	public Emparejamiento(Regalador regalador, Regalado regalado) {
 		super();
 		this.regalador = regalador;
 		this.regalado = regalado;
