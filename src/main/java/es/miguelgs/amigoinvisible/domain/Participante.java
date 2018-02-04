@@ -27,6 +27,7 @@ public class Participante implements Regalador, Regalado {
 		return this.nombre;
 	}
 	
+	@Override
 	public Collection<String> noPuedeRegalarA(){
 		return new ArrayList<>(this.noPuedeRegalarA);
 	}
